@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_three"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/text_yellow"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+        <ImageView
+            android:src="@mipmap/ic_ab_qiushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingLeft="8dp"
+            android:text="个人中心"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:text="登陆/注册"
+            android:drawableLeft="@mipmap/found_item_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="管理我的糗事"
+            android:drawableLeft="@mipmap/ic_manage_my_qiushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="我的收藏"
+            android:drawableLeft="@mipmap/my_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="我的参与"
+            android:drawableLeft="@mipmap/my_particpate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="我的糗友/群"
+            android:drawableLeft="@mipmap/qiuyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="夜间模式"
+            android:drawableLeft="@mipmap/ic_theme_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="视频静音模式"
+            android:drawableLeft="@mipmap/ic_sound_mode_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:drawableLeft="@mipmap/ic_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

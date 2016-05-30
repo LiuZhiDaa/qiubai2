@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_three"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/text_yellow"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+        <ImageView
+            android:src="@mipmap/ic_ab_qiushibai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingLeft="8dp"
+            android:text="小纸条"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:drawablePadding="25dp"
+        android:textSize="20dp"
+        android:text="登陆后才能和糗友聊天呐"
+        android:drawableTop="@mipmap/default_no_content_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="#0FC542"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去登陆/注册"
+        android:textColor="@color/bg_white"
+        android:textSize="25dp"
+        android:id="@+id/button"
+        android:layout_marginBottom="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

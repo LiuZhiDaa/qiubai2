@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/touxiang_item"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/default_anonymous_users_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitStart"
+                app:riv_corner_radius="30dip"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="repeat"
+                app:riv_oval="true" />
+
+
+            <TextView
+                android:id="@+id/hot_tv_item"
+                android:layout_marginLeft="290dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门"
+                android:textSize="15dp"
+                android:scrollbarSize="30dp"
+                android:layout_marginTop="35dp"
+                />
+
+            <TextView
+                android:id="@+id/name_tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textSize="15dp"
+                android:textColor="@color/bg_black"
+                android:layout_marginStart="74dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="32dp" />
+
+
+            <TextView
+                android:padding="10dp"
+                android:textColor="@color/bg_black"
+                android:id="@+id/content_tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textSize="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="82dp"
+                />
+    </RelativeLayout>
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/content_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/content_tv_item"
+                android:layout_alignStart="@+id/content_tv_item" />
+
+        <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/like_tv_item"
+                android:text="1·"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/comment_tv_item"
+                android:text="1·"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/share_tv_item"
+                android:text="1·"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/like_tv_item"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:button="@null"
+            android:id="@+id/btn_item_smile"
+            android:drawableLeft="@mipmap/operation_support"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:button="@null"
+            android:id="@+id/btn_item_hard"
+            android:drawableLeft="@mipmap/operation_unsupport"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="#00000000"
+        android:id="@+id/btn_img_item_comment"
+        android:src="@mipmap/operation_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_toEndOf="@+id/radioGroup" />
+    <ImageButton
+        android:padding="20dp"
+        android:background="#00000000"
+        android:src="@mipmap/operation_more"
+        android:id="@+id/btn_img_item_share"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_below="@+id/btn_img_item_comment"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/textView"
+        android:background="#d9d9d9"/>
+</RelativeLayout>
+</LinearLayout>
+
